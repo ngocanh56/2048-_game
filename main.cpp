@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <bits/stdc++.h>
 #include "commonFunc.h"
 #include "Global.h"
@@ -6,7 +5,6 @@
 #include "Board.h"
 
 using namespace std;
-
 int main(int argc,char* argv[])
 {
     srand(time(NULL));
@@ -17,105 +15,50 @@ int main(int argc,char* argv[])
     board.createBoard();
 
     bool is_quit=false;
+    int numTurns = 3;
+
     while(!is_quit)
     {
         while(SDL_PollEvent(&g_event))
         {
-            if(g_event.type==SDL_QUIT) is_quit=true;
-            else if (g_event.type==SDL_KEYDOWN)
+            if(g_event.type==SDL_QUIT) {
+                is_quit=true;
+                break;
+            }
+
+            if(numTurns <= 0 || board.Endgame()) continue;
+
+            if (g_event.type==SDL_KEYDOWN)
             {
+                numTurns--;
                 switch (g_event.key.keysym.sym)
                 {
                     case SDLK_UP:
-                        if(board.modifyBoard(UP)==true) board.createCell();
+                        board.modifyBoard(UP);
                         break;
                     case SDLK_DOWN:
-                        if(board.modifyBoard(DOWN)==true) board.createCell();
+                        board.modifyBoard(DOWN);
                         break;
                     case SDLK_RIGHT:
-                        if(board.modifyBoard(RIGHT)==true) board.createCell();
+                        board.modifyBoard(RIGHT);
                         break;
                     case SDLK_LEFT:
-                        if(board.modifyBoard(LEFT)==true) board.createCell();
+                        board.modifyBoard(LEFT);
                         break;
                 }
             }
         }
 
-        SDL_SetRenderDrawColor(g_renderer,255,255,255,255);
+        SDL_SetRenderDrawColor(g_renderer,221,204,235,0);
         SDL_RenderClear(g_renderer);
 
-        board.printBoard();
-        board.ModifyIndex();
-        if(board.Endgame()) {is_quit=true;SDL_Delay(5000);}
+        if (numTurns <= 0 || board.Endgame()) board.printEndgame();
+        else board.printBoard(false);
 
-        SDL_Delay(50);
+        SDL_Delay(20);
         SDL_RenderPresent(g_renderer);
     }
+
+    //SDL_Delay(5000);
     return 0;
 }
-=======
-#include <bits/stdc++.h>
-#include "commonFunc.h"
-#include "Global.h"
-#include "LoadImage.h"
-#include "Board.h"
-
-using namespace std;
-
-int main(int argc,char* argv[])
-{
-    srand(time(NULL));
-    InitData(g_window,g_renderer);
-
-    Board board;
-    board.initBoard();
-    board.createBoard();
-
-    bool is_quit=false;
-    while(!is_quit)
-    {
-        while(SDL_PollEvent(&g_event))
-        {
-            if(g_event.type==SDL_QUIT) is_quit=true;
-            else if (g_event.type==SDL_KEYDOWN)
-            {
-                switch (g_event.key.keysym.sym)
-                {
-                    case SDLK_UP:
-                        if(board.modifyBoard(UP)==true) board.createCell();
-                        break;
-                    case SDLK_DOWN:
-                        if(board.modifyBoard(DOWN)==true) board.createCell();
-                        break;
-                    case SDLK_RIGHT:
-                        if(board.modifyBoard(RIGHT)==true) board.createCell();
-                        break;
-                    case SDLK_LEFT:
-                        if(board.modifyBoard(LEFT)==true) board.createCell();
-                        break;
-                }
-            }
-        }
-
-        SDL_SetRenderDrawColor(g_renderer,255,255,255,255);
-        SDL_RenderClear(g_renderer);
-
-        board.printBoard();
-        for(int i=1;i<39;i++)
-         {
-            stringstream ss;string path;
-            ss<<i;ss>>path;
-            path = "Image2/9c47f915a66a4e8af82a47b3b7915fc4wNLPvE1QoVhZfga2-" + path + ".png";
-
-            image.loadImage(path);
-            image.render(19,19,150,150);
-            SDL_Delay(10);
-         }
-          //image.loadImage("Image/11.png");
-            image.render(19,19,150,150);
-        SDL_RenderPresent(g_renderer);
-    }
-    return 0;
-}
->>>>>>> fcff905092ba849c91c7deac0adfc83158270abf
