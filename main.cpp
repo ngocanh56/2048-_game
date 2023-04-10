@@ -68,6 +68,7 @@ int main(int argc,char* argv[])
         if ( board.Endgame())
         {
             number++;
+            if(number==1) SDL_Delay(2000);
             board.printEndgame();
             if(number<=2)
             {
