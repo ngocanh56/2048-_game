@@ -18,7 +18,8 @@ int main(int argc,char* argv[])
     Board board;
     board.set_up_Board();
 
-    BACKGROUND.loadImage("Display/background1.jpg");
+    string name=to_string(rand()%2+1);
+    BACKGROUND.loadImage("Display/background"+name+".jpg");
     TITLE.loadImage("Display/TitleBar.jpg");
     bool is_quit=false;
 
@@ -32,10 +33,10 @@ int main(int argc,char* argv[])
 
             if(inside_Rectangle(coor.x,coor.y,Restart_Rect))
             {
+                string name=to_string(rand()%2+1);
+                BACKGROUND.loadImage("Display/background"+name+".jpg");
                 board.set_up_Board();
-                board.Background();
             }
-
             if(inside_Rectangle(coor.x,coor.y,Cancel_Rect)) is_quit=true;
 
             if(g_event.type==SDL_QUIT)

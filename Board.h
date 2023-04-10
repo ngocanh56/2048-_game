@@ -187,10 +187,10 @@ void Board::printCell(int i,int j,int x,int y,int w,int h)
 void Board::printScore(int Score,bool check_best)
 {
     string SCORE=to_string(Score);
-    while (SCORE.size()<5) SCORE='0'+SCORE;
+    while (SCORE.size()<=5) SCORE='0'+SCORE;
     SDL_Color white={255,255,255};
     image.loadText(SCORE,white);
-    image.render(X+SizeCell*3,210-check_best*70,80,45);
+    image.render(X+SizeCell*3,210-check_best*70,90,45);
 
     //cout<<SCORE<<'\n';
 }
