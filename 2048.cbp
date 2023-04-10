@@ -37,6 +37,7 @@
 		<Unit filename="LoadImage.h" />
 		<Unit filename="commonFunc.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mouse.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

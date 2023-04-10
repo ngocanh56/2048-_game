@@ -1,4 +1,4 @@
-
+#include "commonFunc.h"
 class IMAGE
 {
 private:
@@ -8,13 +8,14 @@ public:
     ~IMAGE();
 
     bool loadImage(std::string path);
-    bool loadText();
+    void loadText(string text,SDL_Color color);
     void free();
     void render(int x,int y,int w,int h);
 };
 
 IMAGE image;
-
+IMAGE BACKGROUND;
+IMAGE TITLE;
 IMAGE::IMAGE()
 {
     texture=NULL;
@@ -43,4 +44,11 @@ void IMAGE::render(int x,int y,int w,int h)
 {
     SDL_Rect rect={x,y,w,h};
     SDL_RenderCopy(g_renderer,texture,NULL,&rect);
+}
+void IMAGE::loadText(string text,SDL_Color color)
+{
+    free();
+    SDL_Surface* textSurface = TTF_RenderText_Blended(g_Font,text.c_str(),color);
+    texture = SDL_CreateTextureFromSurface(g_renderer, textSurface);
+    SDL_FreeSurface(textSurface);
 }

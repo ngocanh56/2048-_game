@@ -12,15 +12,19 @@ using namespace std;
 static SDL_Window* g_window= NULL;
 static SDL_Renderer* g_renderer=NULL;
 static SDL_Event g_event;
+
 //Screen
-const int screen_width=1280;
-const int screen_height=640;
+const int screen_width=1920;
+const int screen_height=1080;
 const int screen_pixel=32;
 
+int X=725, Y=400, SizeCell=127;
+SDL_Rect Restart_Rect={X+SizeCell*3-13,264,62,60};
+SDL_Rect Cancel_Rect={X+SizeCell*3+52,264,62,62};
 
-const int color_key_red=167;
-const int color_key_green=175;
-const int color_key_blue=180;
+bool game_over=false;
 
-const int render_draw_color=0xff;
+Mix_Music *music=NULL;
+int number,best;
+static TTF_Font* g_Font;
 #endif // COMMON_FUNCTION_H_

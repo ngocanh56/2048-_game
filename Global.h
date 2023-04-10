@@ -39,3 +39,9 @@
         SDL_SetRenderDrawColor(g_renderer, r, g, b, a);
         SDL_RenderFillRect(g_renderer, &rect);
     }
+    bool inside_Rectangle(int x,int y,SDL_Rect rect)
+    {
+        if(rect.x<=x && x<=rect.x+rect.w
+        && rect.y<=y && y<=rect.y+rect.h) return true;
+        return false;
+    }
