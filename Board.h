@@ -124,6 +124,7 @@ void Board::modifyBoard(Direction check)
         }
         if(quit==true && num==1) return;
         //do not create new cells if not moving
+        SDL_Delay(30);
     }
 
     music=Mix_LoadMUS("Sound/merge1.wav");
