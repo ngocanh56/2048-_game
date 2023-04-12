@@ -33,7 +33,7 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 * Có bảng thông báo mỗi khi thua.
 ---
 
-#CÁC KĨ THUẬT LẬP TRÌNH ĐƯỢC SỬ DỤNG
+# **CÁC KĨ THUẬT LẬP TRÌNH ĐƯỢC SỬ DỤNG**
 
 * Class, vector, xâu
 
