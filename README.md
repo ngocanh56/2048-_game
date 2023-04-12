@@ -11,6 +11,8 @@ Người chơi sẽ được cấp cho một bảng kích cỡ 4x4 với 2 ô s�
 * Nhấn *RIGHT* :để dồn các ô sang bên phải
 
 Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người chơi sẽ được cộng thêm bằng đúng giá trị của ô mới được tạo ra từ việc sát nhập.
+![image](https://user-images.githubusercontent.com/125036596/231391201-4d9b0461-bca4-4c94-995a-3abf41049f0c.png)
+![image](https://user-images.githubusercontent.com/125036596/231391215-231cc949-af73-4394-9c1d-81d6adce3cee.png)
 
 ![image](https://user-images.githubusercontent.com/125036596/231375440-1082a946-4cbf-4773-8cc5-67473bc3137d.png)
 ---
