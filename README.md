@@ -34,9 +34,14 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 ---
 
 #CÁC KĨ THUẬT LẬP TRÌNH ĐƯỢC SỬ DỤNG
+
 * Class, vector, xâu
+
 * Bắt sự kiện bàn phím, chuột
+
 * Sinh số ngẫu nhiên
+
 * Đọc, ghi file
+
 * Âm thanh,hình ảnh, text trong SDL
 
