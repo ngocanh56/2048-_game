@@ -13,6 +13,7 @@ Người chơi sẽ được cấp cho một bảng kích cỡ 4x4 với 2 ô s�
 Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người chơi sẽ được cộng thêm bằng đúng giá trị của ô mới được tạo ra từ việc sát nhập.
 
 ![image](https://user-images.githubusercontent.com/125036596/231375440-1082a946-4cbf-4773-8cc5-67473bc3137d.png)
+---
 
 **MÔ TẢ CHỨC NĂNG**
 
