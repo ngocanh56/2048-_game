@@ -28,7 +28,7 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 
 * Background thay đổi ngẫu nhiên sau mỗi lần chơi .
 
-* Có hệ thống âm thanh sinh động.
+* Có hệ thống âm thanh sinh động (khi di chuyển các ô và gameover).
 
 * Có bảng thông báo mỗi khi thua.
 ---
