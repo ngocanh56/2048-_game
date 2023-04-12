@@ -16,6 +16,7 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 ---
 
 **MÔ TẢ CHỨC NĂNG:**
+
 ![image](https://user-images.githubusercontent.com/125036596/231380845-966864cf-8fd5-4688-bbb1-b7ec79f19e92.png)
 
 * Có nút *resart* để bắt đầu/ chơi lại ván game. 
