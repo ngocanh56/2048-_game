@@ -1,5 +1,5 @@
 enum Direction {LEFT,RIGHT,UP,DOWN};
-int Size[]={1,40,80,79,57,74,75,89,60,70,93,120};
+int Size[]={1,40,80,79,57,74,75,89,60,70,93,120,10};
 int Num[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0}; // number of picture for animation
 class Board
 {
@@ -197,7 +197,7 @@ void Board::printScore(int Score,bool check_best)
 }
 void Board::Num_of_Animation()
 {
-    int kt[13]; memset(kt,0,sizeof(kt)); //check value is in board ?
+    int kt[14]; memset(kt,0,sizeof(kt)); //check value is in board ?
 
     for (int i=0;i<numRow;++i)
     for (int j=0;j<numColumn;++j)
@@ -205,7 +205,7 @@ void Board::Num_of_Animation()
         int value=log2(matrix[i][j]);
         kt[value]=1;
     }
-    for (int value=0;value<=11;++value)
+    for (int value=0;value<=12;++value)
     Num[value]=(Num[value]+kt[value])%Size[value];
 }
 void Board::get_Best()
