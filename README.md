@@ -17,7 +17,7 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 MÔ TẢ CHỨC NĂNG
 Có nút resart ![image](https://user-images.githubusercontent.com/125036596/231376470-cbec0248-d52f-4234-8647-804f0f9c1044.png) để bắt đầu/ chơi lại ván game.
 
-Có nút ![image](https://user-images.githubusercontent.com/125036596/231376607-df5b4916-fc0e-47c3-8d56-4daf2c738534.png) để thoát game.
+Có nút quit ![image](https://user-images.githubusercontent.com/125036596/231376607-df5b4916-fc0e-47c3-8d56-4daf2c738534.png) để thoát game.
 
 Có hệ thống âm thanh sinh động.
 
