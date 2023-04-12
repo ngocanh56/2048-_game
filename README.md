@@ -24,8 +24,10 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 
 * Có nút *quit* để thoát game. 
 
-* Có hệ thống âm thanh sinh động.
-
 * Tính điểm và lưu điểm cao mỗi lần chơi.
+
+*Background thay đổi ngẫu nhiên sau mỗi lần chơi .
+
+* Có hệ thống âm thanh sinh động.
 
 * Có bảng thông báo mỗi khi thua.
