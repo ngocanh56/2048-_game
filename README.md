@@ -31,3 +31,12 @@ Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người 
 * Có hệ thống âm thanh sinh động.
 
 * Có bảng thông báo mỗi khi thua.
+---
+
+#CÁC KĨ THUẬT LẬP TRÌNH ĐƯỢC SỬ DỤNG
+* Class, vector, xâu
+* Bắt sự kiện bàn phím, chuột
+* Sinh số ngẫu nhiên
+* Đọc, ghi file
+* Âm thanh,hình ảnh, text trong SDL
+
