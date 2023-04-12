@@ -12,4 +12,4 @@ Nhấn RIGHT :để dồn các ô sang bên phải
 
 Mỗi khi 2 ô cùng giá trị và được sát nhập điểm của người chơi sẽ được công thêm bằng đúng giá trị của ô mới được tạo ra từ việc sát nhập
 
-![image](https://user-images.githubusercontent.com/125036596/231373784-1ee3ca49-c015-4035-920f-5e8cac86e4a5.png)
+![image](https://user-images.githubusercontent.com/125036596/231375316-cf504e02-c8c0-42d4-8d46-fe1d1efd53f4.png)
