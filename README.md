@@ -1,5 +1,12 @@
 ﻿# 2048 Game
 ---
+#**GIỚI THIỆU CHUNG**
+
+Game được viết bằng ngôn ngữ C++ và sử dụng thư viện SDL2
+
+Link demo: https://www.youtube.com/watch?v=UfmwwbJ-LRA
+
+---
 # **LUẬT CHƠI:**
 
 **Người chơi sẽ được cấp cho một bảng kích cỡ 4x4 với 2 ô số mở đầu (có thể là 2 hoặc 4) những ô có cùng giá trị sẽ sát nhập vào nhau và tạo ra một ô có giá trị gấp đôi. Nhiệm vụ của người chơi là sát nhập các ô một cách khéo léo để tạo ra ô chiến thắng 2048
