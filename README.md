@@ -1,6 +1,6 @@
 ﻿# 2048 Game
 ---
-#**GIỚI THIỆU CHUNG**
+# **GIỚI THIỆU CHUNG**
 
 Game được viết bằng ngôn ngữ C++ và sử dụng thư viện SDL2
 
