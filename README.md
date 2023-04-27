@@ -4,7 +4,7 @@
 
 Game được viết bằng ngôn ngữ C++ và sử dụng thư viện SDL2
 
-Link demo: https://www.youtube.com/watch?v=UfmwwbJ-LRA
+Link demo: https://youtu.be/5hdnOWZupvk
 
 ---
 # **LUẬT CHƠI:**
